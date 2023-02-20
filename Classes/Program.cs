@@ -8,6 +8,8 @@ namespace Application
     {
         static void Main(string[] args)
         {
+
+        }
             public class Car
          {
             public int Age = 2022;
@@ -22,8 +24,8 @@ namespace Application
             Car c2 = new Car()
             {
                 Make = "Jeep",
-                Model = "Wrangler",
-            }
+                Model = "Wrangler"
+            };
         }
     }
 }
