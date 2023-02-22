@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System;
+using Classes;
 
 namespace Application
 {
@@ -8,25 +9,16 @@ namespace Application
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Year of the {c2.Make} {c2.Model} is {c2.Age}");
 
         }
-            public class Car
+
+         Car c2 = new Car()
          {
-            public int Age = 2022;
-            public string Make { get; set; }
-            public string Model { get; set; }
-
-            public void HowOldCarIs()
-            {
-                Console.WriteLine($"Year of the Jeep Wrangler is {Age}");
-            }
-
-            Car c2 = new Car()
-            {
-                Make = "Jeep",
-                Model = "Wrangler"
-            };
-        }
+             Make = "Jeep",
+             Model = "Wrangler",
+             Age = 2022
+         };
     }
 }
         
