@@ -1,29 +1,39 @@
 ﻿using System;
 using System.Reflection;
-using System;
-using Classes;
 
-namespace Application
+namespace Classes
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Year of the {c2.Make} {c2.Model} is {c2.Age}");
+              public class Car
+        {
+            public string Make { get; set; }
+            public string Model { get; set; }
+            public int Year { get; set; }
+
 
         }
-
-         Car c2 = new Car()
-         {
-             Make = "Jeep",
-             Model = "Wrangler",
-             Age = 2022
-         };
-    }
+        public void HowOldCarIs()
+        {
+            Console.WriteLine($"Year of {myCar.Make} {myCar.Model} is {myCar.Year}");
+        }
+        Car myCar = new Car()
+        {
+            Make = "Jeep",
+            Model = "Wrangler",
+            Year = 2020,
+        };
+    } 
 }
-        
-    //Create a Make property of type string that is public
-    //Create a Model property of type string that is public
-    //Create a Year property of type int that is publiC 
 
-    
+
+
+
+
+//Create a Make property of type string that is public
+//Create a Model property of type string that is public
+//Create a Year property of type int that is publiC 
+
+
